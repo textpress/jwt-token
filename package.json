@@ -20,6 +20,7 @@
         "jsonwebtoken": "^8.0.0"
     },
     "devDependencies": {
+        "@textpress/eslint-config-textpress": "^0.0.6",
         "babel-cli": "^6.26.0",
         "babel-core": "^6.26.0",
         "babel-plugin-transform-flow-strip-types": "^6.22.0",
