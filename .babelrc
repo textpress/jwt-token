@@ -1,0 +1,13 @@
+{
+    "presets": [ [ "env", {
+        "targets": {
+            "node": "6.10.2"
+        }
+    } ], "bluebird" ],
+    "plugins": [
+        "transform-flow-strip-types",
+        "transform-object-rest-spread",
+        "transform-promise-to-bluebird",
+        "transform-runtime"
+    ]
+}
