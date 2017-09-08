@@ -1,5 +1,5 @@
 // @flow
-import * as jwtToken from "..";
+import jwtToken from "..";
 import jsonWebToken from "jsonwebtoken";
 
 const jwtKey = "secret";

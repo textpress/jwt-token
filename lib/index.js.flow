@@ -49,3 +49,6 @@ export function verify( encodedToken: string, signatureKey: string, options?: Ve
         );
     } );
 }
+
+
+export default { sign, verify };
