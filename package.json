@@ -17,8 +17,6 @@
     },
     "license": "MIT",
     "dependencies": {
-        "babel-plugin-transform-object-rest-spread": "^6.26.0",
-        "babel-plugin-transform-runtime": "^6.23.0",
         "bluebird": "^3.5.0",
         "jsonwebtoken": "^8.0.0"
     },
@@ -27,7 +25,9 @@
         "babel-cli": "^6.26.0",
         "babel-core": "^6.26.0",
         "babel-plugin-transform-flow-strip-types": "^6.22.0",
+        "babel-plugin-transform-object-rest-spread": "^6.26.0",
         "babel-plugin-transform-promise-to-bluebird": "^1.1.1",
+        "babel-plugin-transform-runtime": "^6.23.0",
         "babel-preset-bluebird": "^1.0.1",
         "babel-preset-env": "^1.6.0",
         "eslint": "^4.6.1",
