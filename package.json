@@ -5,14 +5,15 @@
     "repository": "github:textpress/jwt-token",
     "main": "lib/index.js",
     "scripts": {
-        "test": "jest",
+        "test": "jest --coverage --colors",
         "flow": "flow check",
         "flow-install-types": "flow-typed install --overwrite",
         "build": "yarn run build:clean && yarn run build:lib && yarn run build:flow",
         "build:clean": "rimraf lib",
         "build:lib": "babel -d lib src --ignore '**/__tests__/**'",
         "build:flow": "flow-copy-source -v -i '**/__tests__/**' src lib",
-        "ci-test": "jest"
+        "ci-test": "jest",
+        "ci-build": "yarn run build"
     },
     "license": "MIT",
     "dependencies": {
