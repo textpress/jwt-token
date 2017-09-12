@@ -1,40 +1,40 @@
 {
-    "name": "@textpress/jwt-token",
-    "version": "0.0.3",
-    "description": "JWT token utils",
-    "repository": "github:textpress/jwt-token",
-    "main": "lib/index.js",
-    "scripts": {
-        "test": "jest --coverage --colors",
-        "flow": "flow check",
-        "flow-install-types": "flow-typed install --overwrite",
-        "bump": "gulp bump --part",
-        "build": "yarn build:clean && yarn build:lib && yarn build:flow",
-        "build:clean": "rimraf lib",
-        "build:lib": "babel -d lib src --ignore '**/__tests__/**'",
-        "build:flow": "flow-copy-source -v -i '**/__tests__/**' src lib",
-        "ci-test": "jest",
-        "ci-build": "yarn build"
-    },
-    "jest": {
-        "testEnvironment": "node",
-        "coverageDirectory": "<rootDir>/.jest-coverage"
-    },
-    "dependencies": {
-        "bluebird": "^3.5.0",
-        "jsonwebtoken": "^8.0.1"
-    },
-    "devDependencies": {
-        "@textpress/babel-preset-textpress": "^0.1.0",
-        "@textpress/eslint-config-textpress": "^0.0.6",
-        "@textpress/gulp-bump-version": "^0.2.0",
-        "eslint": "^4.6.1",
-        "flow": "^0.2.3",
-        "flow-bin": "^0.54.1",
-        "flow-copy-source": "^1.2.1",
-        "flow-typed": "^2.1.5",
-        "jest": "^21.0.2",
-        "jest-cli": "^21.0.2",
-        "rimraf": "^2.6.2"
-    }
+  "name": "@textpress/jwt-token",
+  "version": "0.0.4",
+  "description": "JWT token utils",
+  "repository": "github:textpress/jwt-token",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "jest --coverage --colors",
+    "flow": "flow check",
+    "flow-install-types": "flow-typed install --overwrite",
+    "bump": "gulp bump --part",
+    "build": "yarn build:clean && yarn build:lib && yarn build:flow",
+    "build:clean": "rimraf lib",
+    "build:lib": "babel -d lib src --ignore '**/__tests__/**'",
+    "build:flow": "flow-copy-source -v -i '**/__tests__/**' src lib",
+    "ci-test": "jest",
+    "ci-build": "yarn build"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coverageDirectory": "<rootDir>/.jest-coverage"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "jsonwebtoken": "^8.0.1"
+  },
+  "devDependencies": {
+    "@textpress/babel-preset-textpress": "^0.1.0",
+    "@textpress/eslint-config-textpress": "^0.0.6",
+    "@textpress/gulp-bump-version": "^0.2.0",
+    "eslint": "^4.6.1",
+    "flow": "^0.2.3",
+    "flow-bin": "^0.54.1",
+    "flow-copy-source": "^1.2.1",
+    "flow-typed": "^2.1.5",
+    "jest": "^21.0.2",
+    "jest-cli": "^21.0.2",
+    "rimraf": "^2.6.2"
+  }
 }
