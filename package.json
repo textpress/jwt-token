@@ -15,7 +15,7 @@
         "build:flow": "flow-copy-source -v -i '**/__tests__/**' src lib",
         "ci-test": "jest",
         "ci-build": "yarn build",
-        "ci-release-note": "conventional-github-releaser -p eslint"
+        "ci-release-notes": "conventional-github-releaser -p eslint"
     },
     "jest": {
         "testEnvironment": "node",
