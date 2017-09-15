@@ -11,7 +11,7 @@
         "bump": "gulp bump --part",
         "build": "yarn build:clean && yarn build:lib && yarn build:flow",
         "build:clean": "rimraf lib",
-        "build:lib": "babel -d lib src --ignore '**/__tests__/**'",
+        "build:lib": "babel -s -d lib src --ignore '**/__tests__/**'",
         "build:flow": "flow-copy-source -v -i '**/__tests__/**' src lib",
         "ci-test": "jest",
         "ci-build": "yarn build",
