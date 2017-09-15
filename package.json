@@ -19,7 +19,10 @@
     },
     "jest": {
         "testEnvironment": "node",
-        "coverageDirectory": "<rootDir>/.jest-coverage"
+        "coverageDirectory": "<rootDir>/.jest-coverage",
+        "testMatch": [
+            "**/__tests__/**/*.test.js"
+        ]
     },
     "dependencies": {
         "bluebird": "^3.5.0",
