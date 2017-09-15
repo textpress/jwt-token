@@ -13,7 +13,8 @@
         "build:lib": "babel -d lib src --ignore '**/__tests__/**'",
         "build:flow": "flow-copy-source -v -i '**/__tests__/**' src lib",
         "ci-test": "jest",
-        "ci-build": "yarn run build"
+        "ci-build": "yarn run build",
+        "ci-release-note": "conventional-github-releaser -p eslint"
     },
     "license": "MIT",
     "dependencies": {
@@ -30,6 +31,7 @@
         "babel-plugin-transform-runtime": "^6.23.0",
         "babel-preset-bluebird": "^1.0.1",
         "babel-preset-env": "^1.6.0",
+        "conventional-github-releaser": "^1.1.12",
         "eslint": "^4.6.1",
         "flow": "^0.2.3",
         "flow-bin": "^0.54.1",
