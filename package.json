@@ -17,8 +17,8 @@
     },
     "license": "MIT",
     "dependencies": {
-        "bluebird": "^3.5.0",
-        "jsonwebtoken": "^8.0.0"
+        "bluebird": ">=3.5.0",
+        "jsonwebtoken": ">=8.0.0"
     },
     "devDependencies": {
         "@textpress/eslint-config-textpress": "^0.0.6",
