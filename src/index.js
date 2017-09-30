@@ -12,6 +12,10 @@ export type VerifyOptions = {
     ignoreExpiration?: boolean
 };
 
+export type DecodeOptions = {
+    json?: boolean,
+    complete?: boolean
+};
 
 const mergeOptions = options => ( { ...( options || {} ), algorithm: "HS256" } );
 
@@ -50,5 +54,12 @@ export function verify( encodedToken: string, signatureKey: string, options?: Ve
     } );
 }
 
+export function decode( encodedToken: string, options?: DecodeOptions ): Promise<JWT> {
+    return jsonWebToken.decode(
+        encodedToken,
+        options,
+    );
+}
 
-export default { sign, verify };
+
+export default { sign, verify, decode };

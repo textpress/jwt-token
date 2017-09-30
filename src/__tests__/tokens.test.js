@@ -72,4 +72,30 @@ describe( "jwt-token", () => {
 
     } );
 
+    describe( "decode", () => {
+
+        it( "works", async () => {
+            const result = jwtToken.decode( await jwtToken.sign( token, jwtKey ) );
+            expect( result ).toEqual( { ...token, "iat": expect.any( Number ) } );
+        } );
+
+        it( "returns null if token is missing", async () => {
+            const result = jwtToken.decode( ( undefined: any ) );
+            expect( result ).toEqual( null );
+        } );
+
+        it( "returns token even if it's expired", async () => {
+            const expiredToken = await jwtToken.sign( token, jwtKey, { expiresIn: "0s" } );
+            const result = jwtToken.decode( expiredToken );
+            expect( result ).not.toEqual( null );
+        } );
+
+        it( "returns token even if token signature is invalid", async () => {
+            const invalidToken = await jwtToken.sign( token, "not-so-secret" );
+            const result = jwtToken.decode( invalidToken );
+            expect( result ).not.toEqual( null );
+        } );
+
+    } );
+
 } );
