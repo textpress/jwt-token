@@ -1,6 +1,6 @@
 {
     "name": "@textpress/jwt-token",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "JWT token utils",
     "repository": "github:textpress/jwt-token",
     "main": "lib/index.js",
