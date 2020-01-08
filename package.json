@@ -43,14 +43,14 @@
         "flow-bin": "^0.69.0",
         "flow-copy-source": "^1.2.1",
         "flow-typed": "^2.1.5",
-        "gulp": "^3.9.1",
-        "gulp-confirm": "^1.0.8",
-        "gulp-exec": "^3.0.1",
-        "gulp-print": "^5.0.0",
+        "gulp": "4.0.2",
+        "gulp-confirm": "1.0.8",
+        "gulp-exec": "4.0.0",
+        "gulp-print": "5.0.2",
         "jest": "^22.4.3",
         "jest-cli": "^22.4.3",
         "plugin-error": "^1.0.1",
         "rimraf": "^2.6.2",
-        "yargs": "^11.0.0"
+        "yargs": "15.1.0"
     }
 }
